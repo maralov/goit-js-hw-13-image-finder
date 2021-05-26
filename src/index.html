@@ -11,8 +11,134 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="row py-3 justify-content-center">
+        <div class="col-5">
+          <form class="search-form" id="search-form">
+            <div class="row g-3">
+              <div class="col-sm-7">
+                <input
+                    class="form-control"
+                    type="text"
+                    name="query"
+                    autocomplete="off"
+                    placeholder="Search images..."
+                  />
+              </div>
+              <div class="col-sm">
+                <button type="submit" class="btn btn-primary">Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+          
+      <ul class="gallery text-secondary row">
+        <li class="col-3">
+          <div class="photo-card card">
+            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2015/06/25/17/56/people-821624_1280.jpg" alt="" />
+          
+            <div class="stats card-body d-flex justify-content-between ">
+              <p class="stats-item d-flex justify-content-center flex-column text-center mb-0">
+                <i class="material-icons">thumb_up</i>
+                1108
+              </p>
+              <p class="stats-item d-flex justify-content-center flex-column text-center mb-0">
+                <i class="material-icons">visibility</i>
+                320321
+              </p>
+              <p class="stats-item d-flex justify-content-center flex-column text-center mb-0">
+                <i class="material-icons">comment</i>
+                129
+              </p>
+              <p class="stats-item d-flex justify-content-center flex-column text-center mb-0">
+                <i class="material-icons">cloud_download</i>
+                176019
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="col-3">
+          <div class="photo-card card">
+            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2015/06/25/17/56/people-821624_1280.jpg" alt="" />
+          
+            <div class="stats card-body d-flex justify-content-between ">
+              <p class="stats-item d-flex justify-content-center flex-column">
+                <i class="material-icons">thumb_up</i>
+                1108
+              </p>
+              <p class="stats-item d-flex justify-content-center flex-column">
+                <i class="material-icons">visibility</i>
+                320321
+              </p>
+              <p class="stats-item d-flex justify-content-center flex-column">
+                <i class="material-icons">comment</i>
+                129
+              </p>
+              <p class="stats-item d-flex justify-content-center flex-column">
+                <i class="material-icons">cloud_download</i>
+                176019
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="col-3">
+          <div class="photo-card card">
+            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2015/06/25/17/56/people-821624_1280.jpg" alt="" />
+          
+            <div class="stats card-body d-flex justify-content-between ">
+              <p class="stats-item d-flex justify-content-center flex-column">
+                <i class="material-icons">thumb_up</i>
+                1108
+              </p>
+              <p class="stats-item d-flex justify-content-center flex-column">
+                <i class="material-icons">visibility</i>
+                320321
+              </p>
+              <p class="stats-item d-flex justify-content-center flex-column">
+                <i class="material-icons">comment</i>
+                129
+              </p>
+              <p class="stats-item d-flex justify-content-center flex-column">
+                <i class="material-icons">cloud_download</i>
+                176019
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="col-3">
+          <div class="photo-card card">
+            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2015/06/25/17/56/people-821624_1280.jpg" alt="" />
+          
+            <div class="stats card-body d-flex justify-content-between ">
+              <p class="stats-item d-flex justify-content-center flex-column">
+                <i class="material-icons">thumb_up</i>
+                1108
+              </p>
+              <p class="stats-item d-flex justify-content-center flex-column">
+                <i class="material-icons">visibility</i>
+                320321
+              </p>
+              <p class="stats-item d-flex justify-content-center flex-column">
+                <i class="material-icons">comment</i>
+                129
+              </p>
+              <p class="stats-item d-flex justify-content-center flex-column">
+                <i class="material-icons">cloud_download</i>
+                176019
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="row justify-content-center js-spinner my-3">
+        <div class="spinner-border text-primary" role="status"></div>
+      </div>
+    </div>
+
     <script src="./index.js"></script>
   </body>
 </html>
