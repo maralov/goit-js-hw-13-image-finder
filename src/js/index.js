@@ -10,8 +10,6 @@ const refs = {
   searchForm: document.querySelector('#search-form'),
 }
 
-
-
 const imageApiService = new ImageApiService()
 
 refs.searchForm.addEventListener('submit', onSearchFormSubmit);
@@ -54,7 +52,8 @@ async function onSearchFormSubmit(e) {
   imageApiService.incrementPage();
 }
 
-async function onLoadMoreBtnClick(e) {
+async function onLoadMoreBtnClick() {
+
   const images = await imageApiService.fetchImages();
   await imageCardMarkup(images);
 
@@ -66,6 +65,8 @@ async function onLoadMoreBtnClick(e) {
     behavior: "smooth",
     block: 'end'
   });
+
+  imageApiService.incrementPage();
 }
 
 function imageCardMarkup(images) {
